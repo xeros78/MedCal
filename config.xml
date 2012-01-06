@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.alunny.amazing"
+	id		= "com.xeros.medcal"
 	version 	= "1.0.0">
 
-	<name>alunnys Amazing App</name>
+	<name>MedCal</name>
 
 	<description>
-		An Amazing app by alunny
+		
 	</description>
 
-	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+	<author href="http://antoinegirard.tk"	email="xeros.dev@gmail.com">
+		Antoine GIRARD
 	</author>
 
 	<gap:platforms>
@@ -22,12 +21,9 @@
 		<gap:platform name="blackberry" project="widgets"/>
 	</gap:platforms>
 
-	<icon src="blurry.png" gap:role="default" />
+	<icon src="icon.png" gap:role="default" />
 
-    <gap:splash src="weirdo.png" />
-
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
-	<feature name="http://api.phonegap.com/1.0/network"/>
+    <gap:splash src="splash.png" />
 
 	<!-- sample preference specification -->
 	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
