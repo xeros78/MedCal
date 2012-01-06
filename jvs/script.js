@@ -37,16 +37,16 @@ $(window).load(function(){
 			var $id = $(this).text();
 			var $content = $("#inputs").children(":jqmData(role=content)");
 			var $calcul = calculs[$id]
-			var $html = "";
+			var $html = "<div data-role='fieldcontain'>";
 			
 			$content.html($html);
 			$("#inputs").children(":jqmData(role=header)").children("h1").text($id);
 			
 			for ( name in $calcul.inputs){
-				$html += "<input placeholder='"+name+"' name='"+name+"' id='"+$calcul.inputs[name].id+"' type='"+$calcul.inputs[name].type+"' ><br>"
+				$html += " <label for='"+name+"'>"+name+" : </label><input placeholder='"+name+"' name='"+name+"' id='"+$calcul.inputs[name].id+"' type='"+$calcul.inputs[name].type+"' ><br>"
 			}
 			//alert($html);
-			$html += "<button onclick='calculer(\""+$id+"\")' data-icon='check'>Calculer</button>"
+			$html += "<button onclick='calculer(\""+$id+"\")' data-icon='check'>Calculer</button></div>"
 			
 			$content.html($html).trigger("create");
 			//$("input").page();
