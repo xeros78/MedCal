@@ -2,25 +2,15 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.xeros.medcal"
-	version 	= "1.0.0">
+	version 	= "1.1.2">
 
 	<name>MedCal</name>
 
-	<description>
-		
-	</description>
+	<description>Une petite application de calculatrice médicale.</description>
 
-	<author href="http://antoinegirard.tk"	email="xeros.dev@gmail.com">
+	<author href="http://sapk.fr" email="antoine.girard@sapk.fr">
 		Antoine GIRARD
 	</author>
-
-	<gap:platforms>
-		<gap:platform name="android" minVersion="2.1" />
-		<gap:platform name="webos" />
-		<gap:platform name="symbian.wrt" />
-		<gap:platform name="blackberry" project="widgets"/>
-	</gap:platforms>
-
 	<icon src="icon.png" gap:role="default" />
 
     <gap:splash src="splash.png" />
